@@ -1,8 +1,15 @@
+## Build w/xcaddy
 ```
-:8080 {
+xcaddy build 
+    --with github.com/rsp2k/caddy-server-header
+```
+
+## Caddyfile
+```
+https://goiter.net {
     route {
         serverheader {
-            header_value "MyCustomServer/1.0"
+            header_value "GoiterBSD/1.0"
         }
     }
 }
