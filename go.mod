@@ -1,3 +1,9 @@
+package serverheader
+
+import (
+	"github.com/caddyserver/caddy/v2"
+	"github.com/caddyserver/caddy/v2/modules/caddyhttp"
+	"net/http"
 )
 
 // ModuleName is the name of this module.
