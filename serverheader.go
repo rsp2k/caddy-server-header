@@ -95,9 +95,9 @@ func (sh ServerHeader) ServeHTTP(w http.ResponseWriter, r *http.Request, next ca
         return err
     }
 
-    // Set the "Server" response heade based on value.
+    // Set the "Server" response header based on value.
     if sh.HeaderValue == "random" {
-        w.Header().Set("Server", getRAndomServerHeader())
+        w.Header().Set("Server", getRandomServerHeader())
     } else if sh.HeaderValue != "" {
         w.Header().Set("Server", sh.HeaderValue)
     }
